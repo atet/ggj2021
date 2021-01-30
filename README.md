@@ -1,68 +1,89 @@
-[![./.img/title01.png](./.img/title01.png)](#nolink)
 
-[![./.img/title02.png](./.img/title02.png)](#nolink)
+<h2 align="center"><img src="./.img/title01.png" alt="astray"></h2>
 
-## Global Game Jam 24-Hour Sprint
+<h2 align="center"><img src="./.img/title02.png" alt="smol boi"></h2>
 
-_The experience of losing your parents over again_
+<h3 align="center"><em>The experience of losing your parents again</em></h3>
 
--------------------------------------------------
+---
 
-## Team Orange Aliens
-
-[![./.img/TeamOrangeAlien2_sm.png](./.img/TeamOrangeAlien2_sm.png)](#nolink)
-
-* Software: Robbie [[@rclrobertson](https://github.com/rclrobertson)]
-* 2D Art: Lee [[@Companionsheep](https://github.com/Companionsheep)]
-* 3D Art: Mondul [[@usermkao](https://github.com/usermkao)]
-* Audio: Atet [[@atet](https://github.com/atet)]
-* Project Manager: ＼(▽￣＼(￣▽￣)／￣▽)／ Haylee [[@Sapphomo](https://github.com/Sapphomo)] ＼(▽￣＼(￣▽￣)／￣▽)／
+<h2 align="center">Global Game Jam 2021: 24-Hour Sprint Edition</h2>
 
 -------------------------------------------------
 
-## Concept
+</br><h2 align="center"><b><u>Team Orenji Gaijin</u></b></h2></br>
 
-> [![./.img/concept01.png](./.img/concept01.png)](#nolink)
-> 
-> [[@Companionsheep](https://github.com/Companionsheep)]
+<h2 align="center"><img src="./.img/TeamOrangeAlien2_sm.png" alt="Jitsi group screenshot"></h2>
 
-> [![./.img/concept02.png](./.img/concept02.png)](#nolink)
-> 
-> [[@Sapphomo](https://github.com/Sapphomo)]
-
-> [![./.img/concept]03.png](./.img/concept03.png)(#nolink)
-> 
-> [[@Companionsheep](https://github.com/Companionsheep)]
-
-> [![./.img/concept04.png](./.img/concept04.png)](#nolink)
-> 
-> [[@usermkao](https://github.com/usermkao)]
-
-> [![./.img/concept05.png](./.img/concept05.png)](#nolink)
-> 
-> [[@atet](https://github.com/atet)]
+<p align="center">Software: Robbie [<a href="https://github.com/rclrobertson">@rclrobertson</a>]</p>
+<p align="center">2D Art: Lee [<a href="https://github.com/Companionsheep">@Companionsheep</a>]</p>
+<p align="center">3D Art: Mondul [<a href="https://github.com/usermkao">@usermkao</a>]</p>
+<p align="center">Audio: Atet [<a href="https://github.com/atet">@atet</a>]</p>
+<p align="center">Project Manager: ＼(▽￣＼(￣▽￣)／￣▽)／ Haylee [<a href="https://github.com/Sapphomo">@Sapphomo</a>] ＼(▽￣＼(￣▽￣)／￣▽)／</p>
 
 -------------------------------------------------
 
-## Development
+</br><h2 align="center">Concept</h2></br>
 
-### Unity 2019.4.18f1 (LTS) & C#
+<blockquote align="center">
+<img src="./.img/concept01.png" alt="Companionsheep">
+</br>
+<a href="https://github.com/Companionsheep">@Companionsheep</a>
+</blockquote>
+</br>
+<blockquote align="center">
+<img src="./.img/concept02.png" alt="Sapphomo">
+</br>
+<a href="https://github.com/Sapphomo">@Sapphomo</a>
+</blockquote>
+</br>
+<blockquote align="center">
+<img src="./.img/concept03.png" alt="Companionsheep">
+</br>
+<a href="https://github.com/Companionsheep">@Companionsheep</a>
+</blockquote>
+</br>
+<blockquote align="center">
+<img src="./.img/concept04.png" alt="usermkao">
+</br>
+<a href="https://github.com/usermkao">@usermkao</a>
+</blockquote>
+</br>
+<blockquote align="center">
+<img src="./.img/concept05.png" alt="atet">
+</br>
+<a href="https://github.com/atet">@atet</a>
+</blockquote>
 
-> [![./.img/development01.png](./.img/development01.png)](#nolink)
-> 
-> **_Squishy bois_** [[@Sapphomo](https://github.com/Sapphomo)]
+-------------------------------------------------
 
-> [![./.img/development02.png](./.img/development02.png)](#nolink)
-> 
-> **_Murder fog_** [[@rclrobertson](https://github.com/rclrobertson)]
+</br><h2 align="center">Development</h2></br>
 
-> [![./.img/development03.png](./.img/development03.png)](#nolink)
-> 
-> **_Their eyes..._** [[@usermkao](https://github.com/usermkao)]
+<h3 align="center"><b>Unity 2019.4.18f1 (LTS) & C#</b></h3></br>
 
-> [![./.img/development04.png](./.img/development04.png)](#nolink)
-> 
-> **_MOAR LOUD!!!_** [[@atet](https://github.com/atet)]
+<blockquote align="center">
+<img src="./.img/development01.png" alt="Squishy bois">
+</br>
+<b><em>Squishy bois</em></b> [<a href="https://github.com/Sapphomo">@Sapphomo</a>]
+</blockquote>
+</br>
+<blockquote align="center">
+<img src="./.img/development02.png" alt="Murder fog">
+</br>
+<b><em>Murder fog</em></b> [<a href="https://github.com/rclrobertson">@rclrobertson</a>]
+</blockquote>
+</br>
+<blockquote align="center">
+<img src="./.img/development03.png" alt="Their eyes...">
+</br>
+<b><em>Their eyes...</em></b> [<a href="https://github.com/usermkao">@usermkao</a>]
+</blockquote>
+</br>
+<blockquote align="center">
+<img src="./.img/development04.png" alt="MOAR LOUD!!!">
+</br>
+<b><em>MOAR LOUD!!!</em></b> [<a href="https://github.com/atet">@atet</a>]
+</blockquote>
 
 -------------------------------------------------
 

@@ -1,1 +1,5 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/_MyAssets/Scenes/Prototype01.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

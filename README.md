@@ -1,10 +1,55 @@
-# Team ???
 
-## Lost and Finding
+# Lost and Finding
+
+_The experience of losing your parents at the store._
 
 -------------------------------------------------
 
-## Github
+## Team Orange Aliens
+
+![./.img/TeamOrangeAlien2_sm.png](./.img/TeamOrangeAlien2_sm.png)
+
+* Software: Robbie [[@rclrobertson](https://github.com/rclrobertson)]
+* 2D Art: Lee [[@Companionsheep](https://github.com/Companionsheep)]
+* 3D Art: Mondul [[@usermkao](https://github.com/usermkao)]
+* Audio: Atet [[@atet](https://github.com/atet)]
+* Project Manager: ＼(▽￣＼(￣▽￣)／￣▽)／ Haylee [[@Sapphomo](https://github.com/Sapphomo)] ＼(▽￣＼(￣▽￣)／￣▽)／
+
+-------------------------------------------------
+
+## Concept
+
+> ![./.img/concept01.png](./.img/concept01.png)
+> 
+> [[@Companionsheep](https://github.com/Companionsheep)]
+
+> ![./.img/concept02.png](./.img/concept02.png)
+> 
+> [[@Sapphomo](https://github.com/Sapphomo)]
+
+> ![./.img/concept03.png](./.img/concept03.png)
+> 
+> [[@Companionsheep](https://github.com/Companionsheep)]
+
+> ![./.img/concept04.png](./.img/concept04.png)
+> 
+> [[@Companionsheep](https://github.com/Companionsheep)]
+
+> ![./.img/concept05.png](./.img/concept05.png)
+> 
+> [[@usermkao](https://github.com/usermkao)]
+
+-------------------------------------------------
+
+## Development
+
+### Unity 2019.4.18f1 (LTS) & C#
+
+![./.img/development01.png](./.img/development01.png)
+
+-------------------------------------------------
+
+## GitHub
 
 * This is the basic workflow:
 

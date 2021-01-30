@@ -1,7 +1,11 @@
 
-# Lost and Finding
+![./.img/title01.png](./.img/title01.png)
 
-_The experience of losing your parents at the store._
+![./.img/title02.png](./.img/title02.png)
+
+## Global Game Jam 24-Hour Sprint
+
+_The experience of losing your parents over again_
 
 -------------------------------------------------
 
@@ -33,11 +37,11 @@ _The experience of losing your parents at the store._
 
 > ![./.img/concept04.png](./.img/concept04.png)
 > 
-> [[@Companionsheep](https://github.com/Companionsheep)]
+> [[@usermkao](https://github.com/usermkao)]
 
 > ![./.img/concept05.png](./.img/concept05.png)
 > 
-> [[@usermkao](https://github.com/usermkao)]
+> [[@atet](https://github.com/atet)]
 
 -------------------------------------------------
 
@@ -45,7 +49,21 @@ _The experience of losing your parents at the store._
 
 ### Unity 2019.4.18f1 (LTS) & C#
 
-![./.img/development01.png](./.img/development01.png)
+> ![./.img/development01.png](./.img/development01.png)
+> 
+> **_Squishy bois_** [[@Sapphomo](https://github.com/Sapphomo)]
+
+> ![./.img/development02.png](./.img/development02.png)
+> 
+> **_Murder fog_** [[@rclrobertson](https://github.com/rclrobertson)]
+
+> ![./.img/development03.png](./.img/development03.png)
+> 
+> **_Their eyes..._** [[@usermkao](https://github.com/usermkao)]
+
+> ![./.img/development04.png](./.img/development04.png)
+> 
+> **_MOAR LOUD!!!_** [[@atet](https://github.com/atet)]
 
 -------------------------------------------------
 

@@ -1,19 +1,17 @@
 
-<h2 align="center"><img src="./.img/title01.png" alt="astray"></h2>
-
-<h2 align="center"><img src="./.img/title02.png" alt="smol boi"></h2>
+<h2 align="center"><img src="./.img/title01.png" alt="smol boi astray"></h2>
 
 <h3 align="center"><em>The experience of losing your parents again</em></h3>
-
-Silly change test.
 
 ---
 
 <h2 align="center">Global Game Jam 2021: 24-Hour Sprint Edition</h2>
 
+<p align="center">Play <code>astray</code> <a href="https://globalgamejam.org/2021/games/astray-0">@globalgamejam.org</a></p>
+
 -------------------------------------------------
 
-</br><h2 align="center"><b><u>Team Orenji Gaijin</u></b></h2></br>
+</br><h2 align="center">Team Orenji Gaijin</h2></br>
 
 <h2 align="center"><img src="./.img/TeamOrangeAlien2_sm.png" alt="Jitsi group screenshot"></h2>
 
@@ -86,17 +84,11 @@ Silly change test.
 </br>
 <b><em>MOAR LOUD!!!</em></b> [<a href="https://github.com/atet">@atet</a>]
 </blockquote>
+</br>
+<blockquote align="center">
+<img src="./.img/development05.gif" alt="Night vision mode">
+</br>
+<b><em>Night vision mode</em></b> [<a href="https://github.com/rclrobertson">@rclrobertson</a>]
+</blockquote>
 
 -------------------------------------------------
-
-## GitHub
-
-* This is the basic workflow:
-
-1. `clone` (**you only do this once at the beginning**): You copy all the project files from the Github repository onto your computer
-2. **DO WORK**: Make your changes (add files, modify stuff, etc.) to the project
-3. `pull`: **Before you contribute your changes**, you must grab any changes others have made
-4. `add`: Stage your modified files to your list of changes
-5. `commit`: Add a message about the changes you made
-6. `push`: Send all your changes back to the main repository for everyone to see
-7. **Go back to #2** and start over the cycle

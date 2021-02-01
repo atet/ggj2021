@@ -30,6 +30,7 @@ public class MainSceneScript : MonoBehaviour
         MainMenuWindowController.Hide();
         GameWinWindowController.Hide();
         GameLoseWindowController.Hide();
+        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
     }
 
     public void Start()
@@ -73,7 +74,6 @@ public class MainSceneScript : MonoBehaviour
     public void TriggerWinCondition()
     {
         StopAllAudio();
-
         if (!bGMwin.isPlaying)
         {
             bGMwin.Play();
@@ -116,7 +116,6 @@ public class MainSceneScript : MonoBehaviour
 
     void StopAllAudio()
     {
-        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
         foreach (AudioSource audioS in allAudioSources)
         {
             audioS.Stop();

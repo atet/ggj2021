@@ -17,7 +17,11 @@ public class GameEndWindowController : MonoBehaviour
 
     void Update()
     {
-        
+        if (Input.GetKey("escape"))
+        {
+            Debug.Log("Clicked On Escape");
+            Application.Quit();
+        }
     }
 
     public void ReplayButtonButtonClick()

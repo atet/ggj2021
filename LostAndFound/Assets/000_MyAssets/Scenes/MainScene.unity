@@ -191,6 +191,21 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1794509165}
+    - target: {fileID: 5149966224513732863, guid: ff709cddde0264c4e98ef749fcd358d6,
+        type: 3}
+      propertyPath: m_Text
+      value: "Replay      \nPress Esc to Quit      \n  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149966224513732863, guid: ff709cddde0264c4e98ef749fcd358d6,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149966224513732863, guid: ff709cddde0264c4e98ef749fcd358d6,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 5379375196920723283, guid: ff709cddde0264c4e98ef749fcd358d6,
         type: 3}
       propertyPath: m_Name
@@ -199,7 +214,7 @@ PrefabInstance:
     - target: {fileID: 5379375196920723283, guid: ff709cddde0264c4e98ef749fcd358d6,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7203820413881035644, guid: ff709cddde0264c4e98ef749fcd358d6,
         type: 3}
@@ -873,6 +888,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2025982309098544148, guid: 2cbf81ef8c144ba4dad0217f4587a391,
+        type: 3}
+      propertyPath: m_Text
+      value: "     Replay\n     Press Esc to Quit\n  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025982309098544148, guid: 2cbf81ef8c144ba4dad0217f4587a391,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2025982309098544148, guid: 2cbf81ef8c144ba4dad0217f4587a391,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 2681207874645580066, guid: 2cbf81ef8c144ba4dad0217f4587a391,
         type: 3}
       propertyPath: m_Pivot.x
@@ -977,6 +1007,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5188068134866097096, guid: 2cbf81ef8c144ba4dad0217f4587a391,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5498547407299747077, guid: 2cbf81ef8c144ba4dad0217f4587a391,
         type: 3}

@@ -94,3 +94,13 @@
 </blockquote>
 
 -------------------------------------------------
+
+</br><h2 align="center">Game Play</h2></br>
+
+</br>
+<p align="center">
+<img src="./.img/astray_play.gif" alt="astray Play">
+</br>
+</p>
+
+-------------------------------------------------

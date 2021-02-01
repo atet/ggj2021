@@ -18,6 +18,12 @@ public class MainSceneScript : MonoBehaviour
 
     public float DistanceFromDad;
 
+    public AudioSource bGMwin;
+    public AudioSource bGMlose;
+
+    private AudioSource[] allAudioSources;
+
+
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
@@ -50,6 +56,14 @@ public class MainSceneScript : MonoBehaviour
 
     public void Loadlevel()
     {
+        if (bGMlose.isPlaying)
+        {
+            bGMlose.Stop();
+        }
+        if (bGMwin.isPlaying)
+        {
+            bGMwin.Stop();
+        }
         MainMenuWindowController.Hide();
         GameWinWindowController.Hide();
         GameLoseWindowController.Hide();
@@ -58,6 +72,12 @@ public class MainSceneScript : MonoBehaviour
 
     public void TriggerWinCondition()
     {
+        StopAllAudio();
+
+        if (!bGMwin.isPlaying)
+        {
+            bGMwin.Play();
+        }
         MainMenuWindowController.Hide();
         GameWinWindowController.Show();
         GameLoseWindowController.Hide();
@@ -65,6 +85,10 @@ public class MainSceneScript : MonoBehaviour
 
     public void TriggerLoseCondition()
     {
+        if (!bGMlose.isPlaying)
+        {
+            bGMlose.Play();
+        }
         MainMenuWindowController.Hide();
         GameWinWindowController.Hide();
         GameLoseWindowController.Show();
@@ -87,6 +111,15 @@ public class MainSceneScript : MonoBehaviour
         if (DistanceFromDad >= MAX_DISTANCE_FROM_PARENTS_FOR_LOSE)
         {
             TriggerLoseCondition();
+        }
+    }
+
+    void StopAllAudio()
+    {
+        allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource audioS in allAudioSources)
+        {
+            audioS.Stop();
         }
     }
 }

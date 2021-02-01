@@ -170,8 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34ddf4a49ea43c94f9ef6c76d6455997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MIN_DISTANCE_TO_PARENTS_FOR_WIN: 10
-  MAX_DISTANCE_FROM_PARENTS_FOR_LOSE: 50
+  MIN_DISTANCE_TO_PARENTS_FOR_WIN: 3.5
+  MAX_DISTANCE_FROM_PARENTS_FOR_LOSE: 75
   MainMenuWindowController: {fileID: 661389668}
   GameWinWindowController: {fileID: 613536268}
   GameLoseWindowController: {fileID: 4172327252801259316}
@@ -214,7 +214,7 @@ PrefabInstance:
     - target: {fileID: 5379375196920723283, guid: ff709cddde0264c4e98ef749fcd358d6,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7203820413881035644, guid: ff709cddde0264c4e98ef749fcd358d6,
         type: 3}

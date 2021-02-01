@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainSceneScript : MonoBehaviour
 {
-    public float MIN_DISTANCE_TO_PARENTS_FOR_WIN = 10;
-    public float MAX_DISTANCE_FROM_PARENTS_FOR_LOSE = 50;
+    public float MIN_DISTANCE_TO_PARENTS_FOR_WIN = 1;
+    public float MAX_DISTANCE_FROM_PARENTS_FOR_LOSE = 75;
 
     public MainMenuWindowController MainMenuWindowController;
     public GameEndWindowController GameWinWindowController;

@@ -2,7 +2,7 @@
 
 public class ParentMovement : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed = 6f;
 
     private Rigidbody rb;
 

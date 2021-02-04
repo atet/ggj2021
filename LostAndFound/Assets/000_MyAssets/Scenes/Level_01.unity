@@ -2604,8 +2604,9 @@ Transform:
   - {fileID: 1054564310}
   - {fileID: 1987567783}
   - {fileID: 1569590237}
+  - {fileID: 754848739}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &166070006
 PrefabInstance:
@@ -7701,7 +7702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4122625377137146, guid: 5d075d3ed32dfe1498e31454964d07e8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11442,7 +11443,7 @@ RectTransform:
   - {fileID: 1748525915}
   - {fileID: 956250677}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12316,7 +12317,7 @@ MonoBehaviour:
   _pixelateDownscale: 0
   _antialiasStrength: 5
   _antialiasDepthThreshold: 0.001
-  isDirty: 0
+  isDirty: 1
   bMat: {fileID: 0}
 --- !u!114 &640892458
 MonoBehaviour:
@@ -13984,7 +13985,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &754848737
 GameObject:
@@ -13997,7 +13998,7 @@ GameObject:
   - component: {fileID: 754848739}
   - component: {fileID: 754848738}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Glasses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14060,12 +14061,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754848737}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.02, y: 0.278, z: -3.71}
   m_LocalScale: {x: -0.2, y: 0.2, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 160826544}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &756372216
 GameObject:
@@ -15436,8 +15437,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802ae465d67ffb946aef199147a03bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDensity: 0.9
-  MinDensity: 0.25
 --- !u!4 &818714054
 Transform:
   m_ObjectHideFlags: 0
@@ -15450,7 +15449,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &830657894
 PrefabInstance:
@@ -18652,6 +18651,155 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 997756779}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1000845077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1000845079}
+  - component: {fileID: 1000845078}
+  - component: {fileID: 1000845080}
+  m_Layer: 0
+  m_Name: Level_01Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1000845078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000845077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 205b447bef0deaf42ba8435be331f87f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MIN_DISTANCE_TO_PARENTS_FOR_WIN: 3.5
+  MAX_DISTANCE_FROM_PARENTS_FOR_LOSE: 50
+  LostChildCharacterGameObject: {fileID: 423319070}
+  MomGameObject: {fileID: 716376516}
+  DadGameObject: {fileID: 966272083}
+  DistanceFromDad: 0
+  bGMlose: {fileID: 1000845080}
+  MaxDensity: 0.9
+  MinDensity: 0.25
+--- !u!4 &1000845079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000845077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10, y: 2.23, z: -5.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1000845080
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000845077}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 77eb33760c5d73f488cc608f191f5ab0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1006172974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23509,7 +23657,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1301957118
 PrefabInstance:
@@ -25003,7 +25151,7 @@ PrefabInstance:
     - target: {fileID: 3040389573841092619, guid: 0ac946b9fd535aa4da3225baf708997a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3040389573841092619, guid: 0ac946b9fd535aa4da3225baf708997a,
         type: 3}
@@ -25155,7 +25303,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1363057044
 PrefabInstance:
@@ -25873,7 +26021,7 @@ PrefabInstance:
     - target: {fileID: 1929574507215522817, guid: 0e4a19da9d8346641895e82fbf70cdb2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1929574507215522817, guid: 0e4a19da9d8346641895e82fbf70cdb2,
         type: 3}
@@ -36064,30 +36212,9 @@ MonoBehaviour:
   - location:
       isValid: 1
       owner: {fileID: 2143078632}
-      spawnPosition: {x: 15, y: 1.5, z: 42.5}
+      spawnPosition: {x: -25, y: 1.5, z: 42.5}
       spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 25, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -40, y: 1.5, z: 57.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -30, y: 7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -30, y: 1.5, z: 47.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -20, y: -2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -5, y: 1.5, z: 57.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 5, y: 7.5, z: 0}
+    localOffest: {x: -15, y: -7.5, z: 0}
     isOccupied: 0
   - location:
       isValid: 1
@@ -36099,198 +36226,9 @@ MonoBehaviour:
   - location:
       isValid: 1
       owner: {fileID: 2143078632}
-      spawnPosition: {x: -40, y: 1.5, z: 42.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -30, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -5, y: 1.5, z: 47.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 5, y: -2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 0, y: 1.5, z: 42.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 10, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 25, y: 1.5, z: 47.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 35, y: -2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 25, y: 1.5, z: 42.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 35, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 0, y: 1.5, z: 57.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 10, y: 7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 25, y: 1.5, z: 57.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 35, y: 7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 20, y: 1.5, z: 42.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 30, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -5, y: 1.5, z: 42.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 5, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 20, y: 1.5, z: 47.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 30, y: -2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -45, y: 1.5, z: 42.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -35, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -10, y: 1.5, z: 47.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 0, y: -2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 5, y: 1.5, z: 57.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 15, y: 7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 20, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 30, y: 2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -35, y: 1.5, z: 57.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -25, y: 7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -10, y: 1.5, z: 42.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 0, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -10, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 0, y: 2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
       spawnPosition: {x: -20, y: 1.5, z: 57.5}
       spawnRotation: {x: -0, y: -0, z: -0, w: 1}
     localOffest: {x: -10, y: 7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -45, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -35, y: 2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 5, y: 1.5, z: 47.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 15, y: -2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -15, y: 1.5, z: 57.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -5, y: 7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -45, y: 1.5, z: 57.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -35, y: 7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -35, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -25, y: 2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -35, y: 1.5, z: 42.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -25, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -20, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -10, y: 2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 25, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 35, y: 2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -10, y: 1.5, z: 57.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 0, y: 7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 15, y: 1.5, z: 47.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 25, y: -2.5, z: 0}
     isOccupied: 0
   - location:
       isValid: 1
@@ -36302,135 +36240,9 @@ MonoBehaviour:
   - location:
       isValid: 1
       owner: {fileID: 2143078632}
-      spawnPosition: {x: -30, y: 1.5, z: 42.5}
+      spawnPosition: {x: 10, y: 1.5, z: 42.5}
       spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -20, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -30, y: 1.5, z: 57.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -20, y: 7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 10, y: 1.5, z: 57.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 20, y: 7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -35, y: 1.5, z: 47.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -25, y: -2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -45, y: 1.5, z: 47.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -35, y: -2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 10, y: 1.5, z: 47.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 20, y: -2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -15, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -5, y: 2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 0, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 10, y: 2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 5, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 15, y: 2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 15, y: 1.5, z: 57.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 25, y: 7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -40, y: 1.5, z: 47.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -30, y: -2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -15, y: 1.5, z: 47.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -5, y: -2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -15, y: 1.5, z: 42.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -5, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -25, y: 1.5, z: 42.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -15, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: 15, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 25, y: 2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -30, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -20, y: 2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -20, y: 1.5, z: 42.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -10, y: -7.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -5, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 5, y: 2.5, z: 0}
-    isOccupied: 0
-  - location:
-      isValid: 1
-      owner: {fileID: 2143078632}
-      spawnPosition: {x: -25, y: 1.5, z: 52.5}
-      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -15, y: 2.5, z: 0}
+    localOffest: {x: 20, y: -7.5, z: 0}
     isOccupied: 0
   - location:
       isValid: 1
@@ -36442,9 +36254,9 @@ MonoBehaviour:
   - location:
       isValid: 1
       owner: {fileID: 2143078632}
-      spawnPosition: {x: 10, y: 1.5, z: 52.5}
+      spawnPosition: {x: -10, y: 1.5, z: 47.5}
       spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 20, y: 2.5, z: 0}
+    localOffest: {x: 0, y: -2.5, z: 0}
     isOccupied: 0
   - location:
       isValid: 1
@@ -36456,9 +36268,212 @@ MonoBehaviour:
   - location:
       isValid: 1
       owner: {fileID: 2143078632}
-      spawnPosition: {x: -25, y: 1.5, z: 57.5}
+      spawnPosition: {x: 20, y: 1.5, z: 52.5}
       spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -15, y: 7.5, z: 0}
+    localOffest: {x: 30, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -40, y: 1.5, z: 57.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -30, y: 7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -45, y: 1.5, z: 57.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -35, y: 7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -25, y: 1.5, z: 47.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -15, y: -2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -45, y: 1.5, z: 42.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -35, y: -7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -20, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -10, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -45, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -35, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -35, y: 1.5, z: 57.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -25, y: 7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 15, y: 1.5, z: 47.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 25, y: -2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -10, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 0, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -15, y: 1.5, z: 47.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -5, y: -2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -40, y: 1.5, z: 47.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -30, y: -2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -30, y: 1.5, z: 42.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -20, y: -7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 15, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 25, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 25, y: 1.5, z: 47.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 35, y: -2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 25, y: 1.5, z: 57.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 35, y: 7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -5, y: 1.5, z: 42.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 5, y: -7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -15, y: 1.5, z: 42.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -5, y: -7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -15, y: 1.5, z: 57.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -5, y: 7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 5, y: 1.5, z: 57.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 15, y: 7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -35, y: 1.5, z: 47.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -25, y: -2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -5, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 5, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 0, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 10, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -20, y: 1.5, z: 42.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -10, y: -7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 25, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 35, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -30, y: 1.5, z: 57.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -20, y: 7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -35, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -25, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 25, y: 1.5, z: 42.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 35, y: -7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 20, y: 1.5, z: 47.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 30, y: -2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -35, y: 1.5, z: 42.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -25, y: -7.5, z: 0}
     isOccupied: 0
   - location:
       isValid: 1
@@ -36470,16 +36485,149 @@ MonoBehaviour:
   - location:
       isValid: 1
       owner: {fileID: 2143078632}
-      spawnPosition: {x: 10, y: 1.5, z: 42.5}
+      spawnPosition: {x: -10, y: 1.5, z: 57.5}
       spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: 20, y: -7.5, z: 0}
+    localOffest: {x: 0, y: 7.5, z: 0}
     isOccupied: 0
   - location:
       isValid: 1
       owner: {fileID: 2143078632}
-      spawnPosition: {x: -25, y: 1.5, z: 47.5}
+      spawnPosition: {x: -5, y: 1.5, z: 47.5}
       spawnRotation: {x: -0, y: -0, z: -0, w: 1}
-    localOffest: {x: -15, y: -2.5, z: 0}
+    localOffest: {x: 5, y: -2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 10, y: 1.5, z: 47.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 20, y: -2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -5, y: 1.5, z: 57.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 5, y: 7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -10, y: 1.5, z: 42.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 0, y: -7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -25, y: 1.5, z: 57.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -15, y: 7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 5, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 15, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 10, y: 1.5, z: 57.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 20, y: 7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -25, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -15, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 0, y: 1.5, z: 57.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 10, y: 7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 0, y: 1.5, z: 42.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 10, y: -7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 5, y: 1.5, z: 47.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 15, y: -2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 20, y: 1.5, z: 42.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 30, y: -7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -15, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -5, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -40, y: 1.5, z: 42.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -30, y: -7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 10, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 20, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -30, y: 1.5, z: 47.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -20, y: -2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 15, y: 1.5, z: 57.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 25, y: 7.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -30, y: 1.5, z: 52.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -20, y: 2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: -45, y: 1.5, z: 47.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: -35, y: -2.5, z: 0}
+    isOccupied: 0
+  - location:
+      isValid: 1
+      owner: {fileID: 2143078632}
+      spawnPosition: {x: 15, y: 1.5, z: 42.5}
+      spawnRotation: {x: -0, y: -0, z: -0, w: 1}
+    localOffest: {x: 25, y: -7.5, z: 0}
     isOccupied: 0
   isAboveGround: 1
   isStatic: 0

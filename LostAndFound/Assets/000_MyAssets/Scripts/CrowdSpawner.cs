@@ -9,16 +9,4 @@ public class CrowdSpawner : MonoBehaviour
     public int PeoplePerSpawn = 10;
     public float SpawnDistance = 50f;
     public GameObject SpawnPrefab;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
